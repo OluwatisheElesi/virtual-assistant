@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant UI</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, black, #121212, #1E1E1E);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(255, 111, 66, 0.3);
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #FF6F42;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #E65100;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .quick-access-button {
+            display: inline-block;
+            margin: 5px;
+            background: gray;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Voice Assistant UI</h2>
+        <input id="command-input" type="text" placeholder="Say or type a command...">
+        <button id="execute-button">Execute Command</button>
+        <h3>Command History</h3>
+        <ul id="history-list"></ul>
+        <h3>Quick Access Apps</h3>
+        <div id="quick-access-apps"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
